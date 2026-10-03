@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Parts Armory — The Republic of PC Gamers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="noise"></div>
+<header class="topbar">
+<a class="brand" href="home.html"><div class="brand-mark small"><span>R</span><i></i></div><div><b>THE REPUBLIC</b><small>OF PC GAMERS</small></div></a>
+<nav><a href="home.html">HQ</a><a href="builder.html">LET'S BUILD</a><a class="active" href="parts.html">PARTS</a><a href="about.html">ABOUT</a></nav>
+<div class="top-actions"><button class="icon-btn" data-sound>◒</button><button class="profile-btn" id="profileBtn">PLAYER <span>01</span></button></div>
+</header>
+<main class="parts-page">
+  <div class="parts-heading"><div><span class="eyebrow">THE ARMORY / HARDWARE ARCHIVE</span><h1>Every part. <em>Every generation.</em></h1><p>Browse a curated catalog spanning modern hardware and legacy PC components. Data is structured so new releases can be added without redesigning the site.</p></div><a class="primary-btn" href="builder.html">BUILD A PC →</a></div>
+  <div class="filters"><input id="searchParts" placeholder="Search CPU, RTX, Ryzen, DDR5..." /><div id="filterButtons" class="filter-buttons"></div></div>
+  <div id="partsGrid" class="parts-grid"></div>
+</main>
+<div id="toast" class="toast"></div>
+<script src="data.js"></script><script src="app.js"></script><script src="parts.js"></script>
+</body>
+</html>

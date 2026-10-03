@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Republic HQ — The Republic of PC Gamers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="noise"></div>
+<header class="topbar">
+  <a class="brand" href="home.html"><div class="brand-mark small"><span>R</span><i></i></div><div><b>THE REPUBLIC</b><small>OF PC GAMERS</small></div></a>
+  <nav><a class="active" href="home.html">HQ</a><a href="builder.html">LET'S BUILD</a><a href="parts.html">PARTS</a><a href="about.html">ABOUT</a></nav>
+  <div class="top-actions"><button class="icon-btn" data-sound title="Sound">◒</button><button class="profile-btn" id="profileBtn">PLAYER <span>01</span></button></div>
+</header>
+
+<main class="home">
+  <section class="hero-panel">
+    <div class="hero-content">
+      <span class="pill">SYSTEM ONLINE · 2026 EDITION</span>
+      <h1>YOUR RIG.<br><em>YOUR RULES.</em></h1>
+      <p>Explore generations of PC hardware, assemble your dream machine, check compatibility and see estimated gaming performance before you buy a single part.</p>
+      <div class="hero-actions"><a class="primary-btn" href="builder.html">LET'S BUILD <span>↗</span></a><a class="ghost-btn" href="parts.html">EXPLORE PARTS</a></div>
+      <div class="live-strip"><span class="live-dot"></span> BUILD ENGINE READY <i></i> COMPATIBILITY CHECKS ACTIVE <i></i> FPS SIMULATION ONLINE</div>
+    </div>
+    <div class="hero-machine">
+      <div class="orb"></div>
+      <div class="pc-case">
+        <div class="glass-side"><div class="gpu-line"></div><div class="fans"><b></b><b></b><b></b></div><div class="ram-lines"></div></div>
+        <div class="case-frame"></div>
+      </div>
+      <div class="machine-label"><span>REPUBLIC // CORE</span><b>01</b></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><div><span class="eyebrow">THE ARMORY</span><h2>Pick your battlefield.</h2></div><a href="parts.html">View all parts →</a></div>
+    <div class="category-grid">
+      <a class="category-card" href="parts.html?cat=GPU"><div class="category-art gpu-art"></div><span>01</span><h3>GRAPHICS</h3><p>GPU / VRAM / Ray tracing</p></a>
+      <a class="category-card" href="parts.html?cat=CPU"><div class="category-art cpu-art"></div><span>02</span><h3>PROCESSORS</h3><p>CPU / cores / threads</p></a>
+      <a class="category-card" href="parts.html?cat=Motherboard"><div class="category-art board-art"></div><span>03</span><h3>MOTHERBOARDS</h3><p>Chipsets / sockets / IO</p></a>
+      <a class="category-card" href="parts.html?cat=Memory"><div class="category-art ram-art"></div><span>04</span><h3>MEMORY</h3><p>DDR4 / DDR5 / capacity</p></a>
+      <a class="category-card" href="parts.html?cat=Storage"><div class="category-art ssd-art"></div><span>05</span><h3>STORAGE</h3><p>NVMe / SATA / Gen5</p></a>
+      <a class="category-card" href="parts.html?cat=Power"><div class="category-art psu-art"></div><span>06</span><h3>POWER</h3><p>PSU / efficiency / wattage</p></a>
+    </div>
+  </section>
+
+  <section class="section split">
+    <div class="feature-card">
+      <span class="eyebrow">BUILD ENGINE</span><h2>See the machine<br>before you build it.</h2>
+      <p>Swap parts instantly. The Republic recalculates compatibility, estimated power draw, thermals and gaming FPS in real time.</p>
+      <a class="text-btn" href="builder.html">OPEN BUILDER →</a>
+    </div>
+    <div class="fps-card"><div class="fps-top"><span>LIVE SIMULATION</span><b>1440P / ULTRA</b></div><div class="fps-number">182<span> FPS</span></div><div class="fps-game">CYBERPUNK 2077</div><div class="bar"><i style="width:86%"></i></div><div class="fps-grid"><span>1% LOW <b>121</b></span><span>GPU <b>94%</b></span><span>CPU <b>58%</b></span></div></div>
+  </section>
+</main>
+<div id="toast" class="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>

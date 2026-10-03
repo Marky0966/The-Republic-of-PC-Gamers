@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>The Republic of PC Gamers — Enter the Republic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="login-page">
+  <div class="noise"></div>
+  <div class="login-grid"></div>
+  <main class="login-shell">
+    <section class="login-hero">
+      <div class="brand-mark"><span>R</span><i></i></div>
+      <p class="eyebrow">THE REPUBLIC OF PC GAMERS</p>
+      <h1>BUILD<br><span>BEYOND.</span></h1>
+      <p class="hero-copy">A cinematic PC builder for people who care about every core, frame, watt and detail.</p>
+      <div class="hero-stats"><b>1,000+</b><span>components catalogued</span><b>∞</b><span>possible builds</span></div>
+    </section>
+
+    <section class="auth-card glass">
+      <div class="auth-brand">
+        <div class="mini-logo">RPG</div>
+        <div><strong>THE REPUBLIC</strong><small>OF PC GAMERS</small></div>
+      </div>
+      <h2>Enter the Republic</h2>
+      <p>Sign in to save builds, compare parts and continue your rig anywhere.</p>
+      <button class="social google" data-login="Google"><span>G</span> Continue with Google</button>
+      <button class="social facebook" data-login="Facebook"><span>f</span> Continue with Facebook</button>
+      <button class="social apple" data-login="Apple"><span>●</span> Continue with Apple</button>
+      <div class="divider"><span>or</span></div>
+      <form id="loginForm">
+        <label>Email address</label>
+        <input type="email" id="email" placeholder="you@example.com" required>
+        <label>Password</label>
+        <input type="password" id="password" placeholder="••••••••" required minlength="4">
+        <button class="primary-btn" type="submit">ENTER THE REPUBLIC <span>→</span></button>
+      </form>
+      <small class="auth-note">Demo mode • OAuth can be connected to a real backend later.</small>
+    </section>
+  </main>
+  <div id="toast" class="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>

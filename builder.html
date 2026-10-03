@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Let's Build — The Republic of PC Gamers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="noise"></div>
+<header class="topbar">
+<a class="brand" href="home.html"><div class="brand-mark small"><span>R</span><i></i></div><div><b>THE REPUBLIC</b><small>OF PC GAMERS</small></div></a>
+<nav><a href="home.html">HQ</a><a class="active" href="builder.html">LET'S BUILD</a><a href="parts.html">PARTS</a><a href="about.html">ABOUT</a></nav>
+<div class="top-actions"><button class="icon-btn" data-sound>◒</button><button class="profile-btn" id="profileBtn">PLAYER <span>01</span></button></div>
+</header>
+
+<main class="builder-page">
+  <div class="builder-heading"><div><span class="eyebrow">BUILD LAB / CONFIGURATION 01</span><h1>Let's build <em>your rig.</em></h1></div><button class="ghost-btn" id="resetBuild">RESET BUILD</button></div>
+  <div class="builder-layout">
+    <section class="build-list">
+      <div id="compatNotice" class="compat good">● SYSTEM READY — Select your components.</div>
+      <div id="componentSlots"></div>
+    </section>
+    <aside class="build-preview">
+      <div class="preview-head"><span>LIVE PREVIEW</span><span id="buildScore">SCORE 0</span></div>
+      <div class="render-stage"><div class="render-pc"><div class="render-glass"><div class="render-gpu"></div><div class="render-fan f1"></div><div class="render-fan f2"></div><div class="render-fan f3"></div><div class="render-ram"></div></div></div></div>
+      <div class="build-name"><input id="buildName" value="REPUBLIC // CUSTOM-01" aria-label="Build name"></div>
+      <div class="performance">
+        <div><small>EST. FPS</small><b id="fpsValue">—</b><span>1440p Ultra</span></div>
+        <div><small>POWER</small><b id="powerValue">—</b><span>Estimated draw</span></div>
+        <div><small>THERMALS</small><b id="tempValue">—</b><span>Gaming load</span></div>
+      </div>
+      <button class="primary-btn wide" id="saveBuild">SAVE BUILD <span>↗</span></button>
+      <button class="ghost-btn wide" id="shareBuild">SHARE BUILD</button>
+    </aside>
+  </div>
+</main>
+<div id="picker" class="modal"><div class="modal-card"><button class="modal-close" id="closePicker">×</button><div class="eyebrow" id="pickerEyebrow">SELECT COMPONENT</div><h2 id="pickerTitle">Choose your part.</h2><div id="pickerGrid" class="picker-grid"></div></div></div>
+<div id="toast" class="toast"></div>
+<script src="data.js"></script><script src="app.js"></script><script src="builder.js"></script>
+</body>
+</html>
